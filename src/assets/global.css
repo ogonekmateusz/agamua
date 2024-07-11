@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --white: #fff;
+  --pink-gradient: linear-gradient(93.06deg, #cc186e -2.84%, #8b1717 105.38%);
+  --black: #000;
+  --darkGray: #251d1d;
+  --lightGray: #535151;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
