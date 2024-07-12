@@ -1,0 +1,57 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #f0f0f0;
+  padding: 30px 0;
+}
+
+.navbar-nav {
+  gap: 45px;
+}
+.nav-item{
+  position: relative;
+  display: inline-block;
+}
+.nav-link {
+  color: var(--black) !important;
+  font-weight: 500;
+  font-size: 16px !important;
+  margin: 2px 0;
+
+}
+.nav-link:hover{
+  background: var(--pink-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 0; /* Adjust this value to move the underline up or down */
+  height: 1px; /* Adjust this value for the thickness of the underline */
+  background: var(--pink-gradient);
+  transition: left 0.5s ease,right 0.5s ease;
+}
+.nav-link:hover::after{
+  left: 0;
+  right: 0;
+}
+@media (max-width: 765px) {
+  .navbar-nav {
+    gap: 10px !important;
+    align-items: center;
+  }
+  .container {
+    margin: 0;
+  }
+  .navbar {
+    padding: 10px !important;
+  }
+}
