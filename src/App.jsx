@@ -6,6 +6,9 @@ import "./assets/navigation.css";
 import Hero from "./components/Hero.jsx"
 import "./assets/hero.css"
 
+import AboutMe from "./components/AboutMe.jsx";
+import "./assets/aboutMe.css"
+
 function App() {
   return (
     <Router>
@@ -16,6 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Hero></Hero>
+            <AboutMe/>
           </Route>
         </Switch>
       </div>

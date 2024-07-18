@@ -1,0 +1,50 @@
+.container-fluid {
+  margin-bottom: 5rem;
+  position: relative;
+  padding-top: 5rem; /* Added padding to create space above the content */
+}
+
+.row {
+  box-shadow: 0 0 20px #bebdbd;
+  width: 85%;
+  background-color: white;
+  padding: 4rem;
+  position: absolute;
+  top: -2rem;
+}
+
+.row h1 {
+  color: #251d1d;
+  font-weight: 600;
+  line-height: 34.27px;
+}
+
+img.max-width {
+  max-width: 100%; /* Ensures the image doesn't exceed its container */
+  max-height: 700px; /* Sets a max height for the image */
+  object-fit: cover; /* Ensures the image scales properly within the constraints */
+}
+
+@media (max-width: 992px) {
+  .row {
+    padding: 2rem; /* Reduce padding on smaller screens */
+  }
+
+  img.max-width {
+    max-height: none; /* Removes the height constraint for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .row {
+    padding: 1rem; /* Further reduce padding on extra small screens */
+  }
+
+  .row h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .lead {
+    font-size: 1rem; /* Adjust lead text size for better readability */
+  }
+}
