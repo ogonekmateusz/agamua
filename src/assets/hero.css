@@ -75,6 +75,7 @@
     }
     .hero{
         justify-content: center;
+        padding-bottom: 70px;
     }
     .hero-info{
         align-items: center;
