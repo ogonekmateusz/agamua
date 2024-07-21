@@ -91,6 +91,12 @@
         font-size: 300%;
         line-height: 50px;
     }
+    .hero-des{
+        width: 100%;
+    }
+    .hero-info{
+        width: 90%;
+    }
     
 }
 @media (max-width:406px) {
@@ -100,5 +106,8 @@
     }
     .hero-des{
         font-size: 100%;
+    }
+    .hero-info{
+        width: 100%;
     }
 }
