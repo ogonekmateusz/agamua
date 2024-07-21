@@ -9,6 +9,8 @@ import "./assets/hero.css"
 import AboutMe from "./components/AboutMe.jsx";
 import "./assets/aboutMe.css"
 
+import Services from "./components/Services.jsx";
+import ".//assets/services.css"
 function App() {
   return (
     <Router>
@@ -20,6 +22,7 @@ function App() {
           <Route exact path="/">
             <Hero></Hero>
             <AboutMe/>
+            <Services></Services>
           </Route>
         </Switch>
       </div>

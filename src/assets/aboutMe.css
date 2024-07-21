@@ -1,6 +1,6 @@
 .container-fluid {
-  margin-bottom: 5rem;
   position: relative;
+  height: 800px;
   padding-top: 5rem; /* Added padding to create space above the content */
 }
 
@@ -24,14 +24,30 @@ img.max-width {
   max-height: 700px; /* Sets a max height for the image */
   object-fit: cover; /* Ensures the image scales properly within the constraints */
 }
-
+.photo{
+  display: flex;
+}
+@media (max-width:1515px) {
+  .lead{
+    font-size: 17px !important;
+  }
+  
+}
 @media (max-width: 992px) {
+  .col-12{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .row {
     padding: 2rem; /* Reduce padding on smaller screens */
   }
 
   img.max-width {
     max-height: none; /* Removes the height constraint for smaller screens */
+  }
+  .lead{
+    font-size: 1rem;
   }
 }
 
