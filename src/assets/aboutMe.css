@@ -33,7 +33,7 @@ img.max-width {
   }
   
 }
-@media (max-width: 992px) {
+@media (max-width: 1062px) {
   .container-fluid{
     height: auto;
   }
@@ -44,7 +44,7 @@ img.max-width {
   }
   .row {
     padding: 2rem; /* Reduce padding on smaller screens */
-    position: static
+    position: static;
   }
 
   img.max-width {
