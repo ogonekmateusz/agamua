@@ -111,6 +111,9 @@
 
 }
 @media (max-width:450px){
+    .services-container{
+        width: 95%;
+    }
     .s-example-photo{
         width: 90%
     }
