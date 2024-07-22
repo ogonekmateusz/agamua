@@ -1,7 +1,7 @@
 .container-fluid {
-  margin-bottom: 5rem;
   position: relative;
-  padding-top: 5rem; /* Added padding to create space above the content */
+  height: 800px;
+  padding-top: 100%; /* Added padding to create space above the content */
 }
 
 .row {
@@ -24,14 +24,34 @@ img.max-width {
   max-height: 700px; /* Sets a max height for the image */
   object-fit: cover; /* Ensures the image scales properly within the constraints */
 }
-
-@media (max-width: 992px) {
+.photo{
+  display: flex;
+}
+@media (max-width:1515px) {
+  .lead{
+    font-size: 17px !important;
+  }
+  
+}
+@media (max-width: 1062px) {
+  .container-fluid{
+    height: auto;
+  }
+  .col-12{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .row {
     padding: 2rem; /* Reduce padding on smaller screens */
+    position: static;
   }
 
   img.max-width {
-    max-height: none; /* Removes the height constraint for smaller screens */
+    max-height: auto; 
+  }
+  .lead{
+    font-size: 100%;
   }
 }
 
@@ -41,10 +61,14 @@ img.max-width {
   }
 
   .row h1 {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 100%; /* Adjust font size for smaller screens */
   }
 
   .lead {
-    font-size: 1rem; /* Adjust lead text size for better readability */
+    font-size: 15%; /* Adjust lead text size for better readability */
+  }
+  img.max-width{
+    height: 500px;
+    width: auto;
   }
 }
