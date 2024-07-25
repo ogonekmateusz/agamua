@@ -102,3 +102,8 @@
         font-size: 100%;
     }
 }
+@media (max-width:350px){
+    .hero-title{
+        font-size: 200%;
+    }
+}

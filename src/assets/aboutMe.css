@@ -69,6 +69,6 @@ img.max-width {
   }
   img.max-width{
     height: 500px;
-    width: auto;
+    width: 100%;
   }
 }

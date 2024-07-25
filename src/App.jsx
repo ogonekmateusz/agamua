@@ -11,6 +11,9 @@ import "./assets/aboutMe.css"
 
 import Services from "./components/Services.jsx";
 import ".//assets/services.css"
+
+import MyWorks from "./components/MyWorks.jsx";
+import "./assets/myWorks.css"
 function App() {
   return (
     <Router>
@@ -23,6 +26,7 @@ function App() {
             <Hero></Hero>
             <AboutMe/>
             <Services></Services>
+            <MyWorks></MyWorks>
           </Route>
         </Switch>
       </div>
