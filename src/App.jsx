@@ -14,6 +14,9 @@ import ".//assets/services.css"
 
 import MyWorks from "./components/MyWorks.jsx";
 import "./assets/myWorks.css"
+
+import Footer from "./components/Footer.jsx";
+import "./assets/footer.css"
 function App() {
   return (
     <Router>
@@ -27,6 +30,7 @@ function App() {
             <AboutMe/>
             <Services></Services>
             <MyWorks></MyWorks>
+            <Footer></Footer>
           </Route>
         </Switch>
       </div>
