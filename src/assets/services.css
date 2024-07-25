@@ -122,3 +122,11 @@
         width: 90%;
     }
 }
+@media (max-width:350px){
+    .services-container{
+        width: 99%;
+    }
+    .s-example-photo{
+        width: 100%
+    }
+}

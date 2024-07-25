@@ -53,3 +53,27 @@
     height: 1px;
     background-color: var(--darkGray);
 }
+/* Responsive functionality */
+@media (max-width:950px){
+    .works-examples{
+        justify-content: center;
+    }
+    .works-example{
+        width: 40%;
+        margin: 3%;
+    }
+}
+@media(max-width:700px){
+    .works-examples{
+        align-items: center;
+        flex-direction: column;
+    }
+    .works-example{
+        width: 70%;
+    }
+}
+@media (max-width:425px){
+    .works-example{
+        width: 100%;
+    }
+}
