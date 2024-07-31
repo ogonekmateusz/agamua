@@ -1,0 +1,77 @@
+.header {
+  background-color: #f0f0f0;
+  /* border: 2px solid red; */
+  height: 15vh;
+  font-size: 45px;
+  margin: 0 !important;
+  box-shadow:  0 0 10px rgb(182, 181, 181);
+}
+
+.formBox {
+  margin-top: clamp(0.8rem, 2vw + 1rem, 4rem);
+  font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+}
+
+.leftSide {
+  width: 50%;
+  padding: clamp(0.5rem, 2vw + 1rem, 0.7rem);
+}
+
+.rightSide {
+  width: 50%;
+  padding: clamp(0.5rem, 2vw + 1rem, 0.7rem);
+}
+
+.leftSide .lead {
+  font-size: clamp(0.5rem, 1.2vw + 0.5rem, 1.1rem) !important;
+}
+
+.rightSide input,
+.rightSide textarea {
+  font-size: clamp(0.8rem, 1.2vw + 0.5rem, 1.1rem) !important;
+}
+
+.rightSide {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.rightSide input,
+.rightSide textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  background-color: #fafafa;
+}
+.rightSide .short:nth-child(1) {
+  width: calc(50% - 5px);
+  display: inline-block;
+  margin: 0 5px 5px 0 !important;
+}
+.rightSide .short:nth-child(2) {
+  width: calc(50% - 5px);
+  display: inline-block;
+  margin: 0 0 5px 5px;
+}
+
+/* .rightSide button {
+
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+} */
+
+@media (max-width: 768px) {
+  .formBox {
+    flex-direction: column;
+  }
+  .leftSide,
+  .rightSide {
+    width: 100%;
+  }
+}
