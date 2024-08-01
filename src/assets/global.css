@@ -11,3 +11,21 @@
 * {
     font-family: "Montserrat", sans-serif;
 }
+/* /animations */
+@keyframes fade-in-load {
+  0% {
+      transform: scale(0.5);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+@keyframes fade-in-scroll {
+  from {scale: 0.8;opacity: 0;}
+  15%{scale: 0.8; opacity: 0.5;}
+  50%{scale: 1; opacity: 1;}
+  75%{scale: 1; opacity: 1;}
+  to {scale:0.8; opacity: 0;}
+}
