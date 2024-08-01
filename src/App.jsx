@@ -30,8 +30,8 @@ function App() {
             <AboutMe/>
             <Services></Services>
             <MyWorks></MyWorks>
-            <Footer></Footer>
           </Route>
+          <Footer></Footer>
         </Switch>
       </div>
     </Router>
