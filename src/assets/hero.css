@@ -10,12 +10,10 @@
 
 .hero-info{
     animation: fade-in-load linear 0.5s backwards;
-    transform-origin: left;
     width: 50%;
 }
 .hero-photo{
-    animation: fade-in-hero linear 0.5s backwards;
-    transform-origin: right;
+    animation: fade-in-load linear 0.5s backwards;
     width: 50%;
     img{
         width: 438px;
