@@ -23,7 +23,6 @@
 .rightSide {
   max-width: 100%;
   margin: 0 auto;
-  text-align: center;
 }
 
 /* Typography */
@@ -47,7 +46,7 @@
 /* Form elements */
 .rightSide input,
 .rightSide textarea {
-  font-size: clamp(0.8rem, 1.2vw + 0.5rem, 1.1rem) !important;
+  font-size: clamp(0.5rem, 1.2vw + 0.5rem, 1rem) !important;
   width: 100%;
   padding: 10px 12px;
   margin: 10px 0;
@@ -56,7 +55,6 @@
   display: block;
   background-color: #fafafa;
   border-radius: 3px;
-  box-shadow: inset 0px 0px 6px -1px rgb(214, 214, 214);
 }
 
 .rightSide input:focus,
@@ -65,8 +63,12 @@
   outline: none;
   border-radius: 2px;
   border-width: 1px;
-  box-shadow: inset 0px 0px 6px -1px rgb(187, 187, 187);
   border-style: solid;
+}
+
+.rightSide input:focus,
+.rightSide textarea:focus {
+  background-color: white;
 }
 
 .rightSide .short {
@@ -87,19 +89,20 @@
 }
 
 .rightSide button {
-  font-size: clamp(0.5rem, 1.2vw + 0.5rem, 1.1rem) !important;
-  color: rgb(129, 129, 129);
-  padding: 8px;
+  font-size: clamp(0.5rem, 1.2vw + 0.5rem, 1rem) !important;
+  padding: 8px 40px;
   border-radius: 3px;
   cursor: pointer;
-  background-color: #fafafa;
   border: 1px solid #ddd;
   transition: 0.3s ease-in-out;
-  box-shadow: inset 0px 0px 6px -1px rgb(207, 207, 207);
+  background: var(--pink-gradient);
+  font-weight: bold;
+  color: white;
 }
 
 .rightSide button:hover {
-  background-color: #ececec;
+  color: white;
+
 }
 
 /* Responsive adjustments */
@@ -126,6 +129,7 @@
 .contactContent {
   position: relative;
   overflow: hidden;
+  padding-bottom: 8vh;
 }
 
 .contactContent:before {
