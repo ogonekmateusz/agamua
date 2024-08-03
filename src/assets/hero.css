@@ -39,11 +39,10 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24.38px;
-  }
-  
-  .hero-btn {
+}
+.hero-btn{
     width: 200px;
-    height: clamp(53px, 5vw, 58px); 
+    height: 58px;
     border-radius: 15px;
     padding: clamp(8px, 1vw, 10px) clamp(8px, 2vw, 15px) !important;
     border: 0;
