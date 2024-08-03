@@ -86,6 +86,14 @@
         text-align: center;
         width: 70%;
     }
+   
+}
+@media (max-width:1000px) {
+
+    .hero-wrapper{
+        height: 100vh;
+    }
+    
 }
 @media (max-width:575px){
     .hero-wrapper{
