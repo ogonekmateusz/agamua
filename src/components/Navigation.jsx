@@ -16,6 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-sm  " >
+      <div className="navbar-line"></div>
       <div className="container">
         {/* <Link to="/" className="navbar-brand">agamua.</Link> */}
         <button

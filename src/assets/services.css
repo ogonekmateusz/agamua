@@ -6,7 +6,9 @@
     width: 100%;
     background-color: var(--white);
     padding: 50px;
+ 
 }
+
 .services-container>div{
     width: 18%;
 }
@@ -45,6 +47,12 @@
 .s-des-more:hover{
     cursor: pointer;
 }
+
+.services-example,.services-des{
+    animation: fade-in-scroll linear;
+    animation-timeline: view();
+}
+
 .s-example-photo{
     width: 100%;
 }

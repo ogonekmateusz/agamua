@@ -38,14 +38,13 @@ const MyWorks = () => {
                     <div className="w-header-all">See All</div>
                 </div>
                 <div className="works-examples">
-                     {data.map((item,index)=>(
-                        <div className="works-example d-flex flex-column" key={index}>
-                        <img className="w-example-photo" src={`/${item.img_src}`} alt="cos" />
-                        <div className="w-example-title">{item.description}</div>
-                        <div className="w-example-line"></div>
-                    </div>
-                    ))}
-                    
+                        {data.map((item, index) => (
+                            <div className="works-example d-flex flex-column" key={index}>
+                                <img className="w-example-photo" src={`/${item.img_src}`} alt="cos" />
+                                <div className="w-example-title">{item.description}</div>
+                                <div className="w-example-line"></div>
+                            </div>
+                        ))}
                 </div>
             </div>
         </div>
