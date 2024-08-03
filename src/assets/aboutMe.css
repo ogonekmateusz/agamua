@@ -2,6 +2,9 @@
   position: relative;
   height: 800px;
   padding-top: 100%; /* Added padding to create space above the content */
+  animation: fade linear;
+  animation-timeline: view();
+  animation-range: entry;
 }
 
 .row {
@@ -31,6 +34,7 @@ img.max-width {
   .lead{
     font-size: 17px !important;
   }
+  
   
 }
 @media (max-width: 1062px) {
