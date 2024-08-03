@@ -1,17 +1,19 @@
 .hero-wrapper {
     width: 100%;
     background-color: #f0f0f0;
-  }
-  
-  .hero {
+}
+.hero {
     width: 80%;
+    animation: fade-in-scroll linear;
+    animation-timeline: view();
   }
   
   .hero-info {
+    animation: fade-in-load linear 0.5s backwards;
     width: 50%;
-  }
-  
-  .hero-photo {
+}
+.hero-photo{
+    animation: fade-in-load linear 0.5s backwards;
     width: 50%;
   }
   
