@@ -18,6 +18,9 @@ import "./assets/myWorks.css";
 import Contact from "./components/Contact.jsx";
 import "./assets/contact.css";
 
+import Footer from "./components/Footer.jsx";
+import "./assets/footer.css"
+
 function App() {
   return (
     <Router>
@@ -36,6 +39,7 @@ function App() {
             <Contact />
           </Route>
         </Switch>
+        <Footer></Footer>
       </div>
     </Router>
   );
