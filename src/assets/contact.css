@@ -1,0 +1,145 @@
+/* Global styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Component-level styles */
+.formBox {
+  margin-top: clamp(0.8rem, 2vw + 1rem, 4rem);
+  font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+}
+
+.leftSide,
+.rightSide {
+  width: 50%;
+  padding: clamp(0.5rem, 2vw + 1rem, 0.7rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightSide {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Typography */
+.leftSide h1 {
+  background: var(--pink-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  margin-bottom: 3%;
+  text-align: justify;
+}
+
+.leftSide p {
+  font-size: clamp(0.5rem, 1.2vw + 0.5rem, 1.1rem) !important;
+  color: #251d1d !important;
+  text-align: justify;
+}
+
+/* Form elements */
+.rightSide input,
+.rightSide textarea {
+  font-size: clamp(0.5rem, 1.2vw + 0.5rem, 1rem) !important;
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  background-color: #fafafa;
+  border-radius: 3px;
+}
+
+.rightSide input:focus,
+.rightSide textarea:focus,
+.rightSide button:hover {
+  outline: none;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.rightSide input:focus,
+.rightSide textarea:focus {
+  background-color: white;
+}
+
+.rightSide .short {
+  width: calc(50% - 5px);
+  display: inline-block;
+}
+
+.rightSide .short:nth-child(1) {
+  margin: 0 5px 0 0 !important;
+}
+
+.rightSide .short:nth-child(2) {
+  margin: 0 0 0 5px !important;
+}
+
+.rightSide textarea {
+  margin-bottom: 0;
+}
+
+.rightSide button {
+  font-size: clamp(0.5rem, 1.2vw + 0.5rem, 1rem) !important;
+  padding: 8px 40px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: 0.3s ease-in-out;
+  background: var(--pink-gradient);
+  font-weight: bold;
+  color: white;
+}
+
+.rightSide button:hover {
+  color: white;
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .formBox {
+    flex-direction: column;
+  }
+  .leftSide,
+  .rightSide {
+    width: 100%;
+  }
+  .rightSide button {
+    margin-top: 0.8rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .formBox {
+    margin-top: 5rem;
+  }
+}
+
+/* Contact content background */
+.contactContent {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 5vh;
+}
+
+.contactContent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  z-index: -1;
+}
