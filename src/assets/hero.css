@@ -1,4 +1,4 @@
-.hero-wrapper{
+.hero-wrapper {
     width: 100%;
     background-color: #f0f0f0;
 }
@@ -6,116 +6,162 @@
     width: 80%;
     animation: fade-in-scroll linear;
     animation-timeline: view();
-}
-
-.hero-info{
+  }
+  
+  .hero-info {
     animation: fade-in-load linear 0.5s backwards;
     width: 50%;
 }
 .hero-photo{
     animation: fade-in-load linear 0.5s backwards;
     width: 50%;
-    img{
-        width: 438px;
-        height: 546px;
-    }
-}
-
-.hero-title{
+  }
+  
+  .hero-photo img {
+    width: 438px;
+    height: 546px;
+  }
+  
+  .hero-title {
     font-weight: 700;
     font-size: 64px;
     line-height: 78.02px;
     letter-spacing: 2%;
-     background: var(--pink-gradient);
+    background: var(--pink-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-}
-.hero-des{
+  }
+  
+  .hero-des {
     color: var(--darkGray);
     font-weight: 400;
     font-size: 20px;
     line-height: 24.38px;
-}
-.hero-btn{
+  }
+  
+  .hero-btn {
     width: 200px;
-    height: 58px;
+    height: clamp(53px, 5vw, 58px); 
     border-radius: 15px;
-    padding: 10px 15px 10px 15px;
-    gap: 10px;
+    padding: clamp(8px, 1vw, 10px) clamp(8px, 2vw, 15px) !important;
     border: 0;
     background-image: var(--pink-gradient);
     font-weight: 600;
-    font-size: 18px;
-    line-height: 21.94px;
+    font-size: clamp(18px, 2vw, 20px); 
     text-align: center;
-    color: var(--white);
-}
-.hero-btn:hover{
-    cursor:pointer;
-}
-
-
-/* Responsive functions */
-@media (max-width:1320px){
-    .hero{
-        width: 90%;
+    transition: transform 0.6s ease, box-shadow 0.6s ease, opacity 0.6s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .hero-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-25deg);
+    transition: left 0.8s ease;
+  }
+  
+  .hero-btn:hover::before {
+    left: 150%;
+  }
+  
+  .hero-btn .btn-link {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .hero-btn:hover {
+    cursor: pointer;
+    color: white;
+    transform: rotateY(10deg) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+  }
+  
+  .hero-btn:hover .btn-link {
+    color: white;
+  }
+  
+  /* Responsive functions */
+  @media (max-width: 1320px) {
+    .hero {
+      width: 90%;
     }
-    .hero-info{
-        width: 60%;
+  
+    .hero-info {
+      width: 60%;
     }
-    .hero-photo{
-        width: 40%;
-        img{
-            width: 100%;
-            height: 546px;
-        }
+  
+    .hero-photo {
+      width: 40%;
     }
-} 
-@media (max-width:1258px){
-    .hero-photo{
-        display: none !important;
+  
+    .hero-photo img {
+      width: 100%;
+      height: 546px;
     }
-    .hero{
-        justify-content: center;
-        padding-bottom: 70px;
+  }
+  
+  @media (max-width: 1258px) {
+    .hero-photo {
+      display: none !important;
     }
-    .hero-info{
-        align-items: center;
-        text-align: center;
-        width: 70%;
+  
+    .hero {
+      justify-content: center;
+      padding-bottom: 70px;
     }
-   
-}
-@media (max-width:1000px) {
-
-    .hero-wrapper{
-        height: 100vh;
+  
+    .hero-info {
+      align-items: center;
+      text-align: center;
+      width: 100% !important;
     }
-    
 }
 @media (max-width:575px){
     .hero-wrapper{
         margin-top: 40px;
     }
-    .hero-title{
-        font-size: 300%;
-        line-height: 50px;
+  
+    .hero-title {
+      font-size: 300%;
+      line-height: 50px;
     }
-    
-}
-@media (max-width:406px) {
-    .hero-title{
-        font-size: 250%;
-        line-height: default !important;
+  }
+  
+  @media (max-width: 406px) {
+    .hero-title {
+      font-size: 250%;
+      line-height: initial !important;
     }
-    .hero-des{
-        font-size: 100%;
+  
+    .hero-des {
+      font-size: 100%;
     }
-}
-@media (max-width:350px){
-    .hero-title{
-        font-size: 200%;
+  }
+  
+  @media (max-width: 350px) {
+    .hero-title {
+      font-size: 200%;
     }
-}
+  }
+  
