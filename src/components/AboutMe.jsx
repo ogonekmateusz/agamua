@@ -2,7 +2,7 @@ import photo from "../assets/photos/aboutme.png";
 
 const AboutMe = () => {
   return (
-    <div className="container-fluid d-flex justify-content-center py-5">
+    <div id="AboutMe" className="container-fluid d-flex justify-content-center py-5">
       <div className="row shadow bg-white p-5">
         <h1 className="mb-4">About Me</h1>
         <div className="col-12 photo col-lg-6 mb-4 mb-lg-0">

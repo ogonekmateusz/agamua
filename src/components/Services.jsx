@@ -17,7 +17,7 @@ const Services = () => {
     }]
 
     return ( 
-        <div className="services-bg d-flex align-items-center">
+        <div id="Services" className=" services-bg d-flex align-items-center">
             <div className="services-container d-flex align-items-center justify-content-around">
                 <div className="services-des d-flex flex-column w-25">
                     <div className="s-des-top">NEW COLLECTION</div>

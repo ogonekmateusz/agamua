@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import { HashLink } from 'react-router-hash-link';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navbar = () => {
@@ -34,13 +34,13 @@ const Navbar = () => {
               <Link className="nav-link" to="/" onClick={closeNavbar}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={closeNavbar}>About</Link>
+            <HashLink className="nav-link" to="#AboutMe" onClick={closeNavbar}>About</HashLink>            </li>
+            <li className="nav-item">
+              {/* <Link className="nav-link" to="/" onClick={closeNavbar}>Services</Link> */}
+              <HashLink className='nav-link' to="#Services" onClick={closeNavbar}>Services</HashLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={closeNavbar}>Services</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={closeNavbar}>Works</Link>
+              <Link className="nav-link" to="/works" onClick={closeNavbar}>Works</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/contact" onClick={closeNavbar}>Contact</Link>
